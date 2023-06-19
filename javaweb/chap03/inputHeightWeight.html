@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+JavaWeb Lesson Chap03 Src01
+
+JSPの登場。
+
+ファイル名=inputHeightWeight.html
+ディレクトリ=/javaweb/chap03
+ -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Yuya OZAKI">
+<title>JSPの登場:入力画面</title>
+<style type="text/css">
+.box {
+	border: solid green 1px;
+	margin: 5px;
+	width: 300px;
+}
+</style>
+</head>
+<body>
+	<h1>JSPの登場:入力画面</h1>
+	<form action="/javaweb/chap03/calcBMI" method="POST">
+		<div class="box">
+			<label for="height"> 身長:&nbsp; <input type="text"
+				name="height" id="height">cm
+			</label><br> <label for="weight"> 体重:&nbsp; <input type="text"
+				name="weight" id="weight">kg
+			</label><br> BMIを計算して
+			<button type="submit">ちょうだい！</button>
+		</div>
+	</form>
+</body>
+</html>

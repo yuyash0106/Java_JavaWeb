@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+JavaWeb Lesson Chap02 Src01
+
+POSTとGETの違い
+
+ファイル名=showPostAndGet.html
+ディレクトリ=/javaweb/chap02
+ -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Yuya OZAKI">
+<title>POSTとGETの違い</title>
+<style type="text/css">
+.box {
+	border: solid green 1px;
+	margin: 5px;
+	width: 300px;
+}
+</style>
+</head>
+<body>
+<p>
+下のそれぞれのフォームのサブミットボタンをクリックしてみよう。
+</p>
+<form action="/javaweb/chap02/postAndGet" method="GET">
+	<div class="box">
+		<label for="getHeight">
+		 身長:&nbsp;
+		 <input type="text" name="height" id="getHeight">cm
+		</label><br>
+		 <label for="getWeight">
+		  体重:&nbsp;
+		  <input type="text" name="weight" id="getWeight">kg
+		</label><br> BMIをGETで計算して<button type="submit">ちょうだい！</button>
+	</div>
+</form>
+<form action="/javaweb/chap02/postAndGet" method="POST">
+	<div class="box">
+		<label for="postHeight">
+		身長:&nbsp;
+		<input type="text" name="height" id="postHeight">cm
+		 </label><br>
+		 <label for="postWeight">
+		 体重:&nbsp;
+		 <input type="text" name="weight" id="postWeight">kg
+		 </label><br>
+		 BMIをPOSTで計算して<button type="submit">ちょうだい！</button>
+	</div>
+</form>
+</body>
+</html>
